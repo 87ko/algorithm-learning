@@ -19,16 +19,16 @@ print(findOkaka(4)) # 16
 
 
 # No.2 おかかを3で割っていく
-# ３の累乗である数nのおかかを、1にち3きれ食べるとしたら、何日分たべられるかな
+# ３の累乗である数nのおかか 何回3でわれるかな
 
-def everydayOkaka(n):
-	return everydayOkakaHelper(n/3, 0)
+def divide3Okaka(n):
+	return divide3OkakaHelper(n/3, 0)
 
-def everydayOkakaHelper(n, count):
+def divide3OkakaHelper(n, count):
 	if n == 1: return count+1
-	return everydayOkakaHelper(n/3, count+1)
+	return divide3OkakaHelper(n/3, count+1)
 
-print(everydayOkaka(3))
+print(divide3Okaka(3))
 
 
 # No.3 n匹のお猫様が並ぶ方法の総数　
