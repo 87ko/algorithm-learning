@@ -48,3 +48,14 @@ def howmanyOkaka(n):
 	return 2 * howmanyOkaka(n-1)
 
 print(howmanyOkaka(3))
+
+
+# No.5 m と n　の最大公約数をもとめる
+# (m, n) とおいて、 m % n = r を (n, r) とおく
+# r = 0 のとき、 n　が公約数となる
+
+def gcd(m,n):
+	if(m%n == 0): return n
+	return gcd(n, m%n)
+
+print(gcd(15,12))
